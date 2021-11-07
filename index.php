@@ -2,10 +2,11 @@
 header('Content-Type: text/html; charset=utf-8');
 include( './simplehtmldom_1_9_1/simple_html_dom.php' );
 
-$url = "https://mangalib.me/gwihwanjaui-mabeob-eun-teugbyeolhaeya-habnida";
-
-
-get_chapter($url);
+if(strpos($argv[1], 'https://mangalib.me/') !== false) {
+   get_chapter($argv[1]);
+}else{
+	die('Неправильный URL в аргументах');
+}
 
 function create_folder_main($name){
 	$structure = './'.$name;
