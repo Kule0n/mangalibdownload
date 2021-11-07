@@ -9,15 +9,11 @@
 ---
 ♦ Инструкция скрипта:
 1. Распаковать архив в папку
-2. Изменить переменную `$url` в index.php на нужны вам ( Пример ниже )
-3. Перейти в папку с помощью консоли и запустить скрипт `php index.php`
+2. Перейти в папку с помощью консоли и запустить скрипт `php index.php URL`
  
-```php
-<?php
-2.	header('Content-Type: text/html; charset=utf-8');
-3.	include( './simplehtmldom_1_9_1/simple_html_dom.php' );
-...
-6.	$url = "https://mangalib.me/gwihwanjaui-mabeob-eun-teugbyeolhaeya-habnida";
+ Пример:
+```
+php index.php https://mangalib.me/higurashi-no-naku-koro-ni-hirukowashi-hen
 ```
 
 ---
